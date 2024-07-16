@@ -6,4 +6,4 @@ jobs:
     echo-string:
         runs-on: ububtu-latest
         steps:
-            - run: echo "Repository Dispatch Event"    
+            - run: echo ${{ github.event.client_payload.env }}    
