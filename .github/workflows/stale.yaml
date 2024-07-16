@@ -1,8 +1,9 @@
 name: Stale Issues & PRs
 on:
   schedule:
-    - cron: "0 17 * * *"
-    - cron: "0/5 * * * *" # JUST FOR TESTING
+    # - cron: "0 17 * * *"
+    # - cron: "0/5 * * * *" # JUST FOR TESTING
+    # uncomment above two lines to run the workflow on a schedule
 
 jobs:
   stale:
