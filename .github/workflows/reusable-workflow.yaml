@@ -8,7 +8,7 @@ on:
 
 jobs:
   nested-workflow-call:
-    uses: github-actions-course/workflows/.github/workflows/reusable.yaml@master
+    uses: cvaishu6/workflows/.github/workflows/reusable.yaml@master
     with:
       name: "Alisha"
     secrets:
