@@ -40,4 +40,10 @@ jobs:
         uses: docker://node:18-alpine3.19
         with:
           entrypoint: cat
-          args: text.txt    
+          args: text.txt
+      - uses: actions/checkout@v3
+      - name: Run a bash script
+        uses: docker://node:18-alpine3.19
+        with:
+          entrypoint: ./script.sh
+          args: "Some string"              
