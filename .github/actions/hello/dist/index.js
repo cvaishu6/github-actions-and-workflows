@@ -31082,6 +31082,7 @@ const core = __nccwpck_require__(8401);
 const github = __nccwpck_require__(7401);
 
 try {
+    throw new Error('This is an error');
     core.debug('Debug message');
     core.warning('Warning message');
     core.error('Error message');
@@ -31090,9 +31091,9 @@ try {
     console.log(`Hello ${name}`);
 
     const time = new Date();
-    core.setOutput('time', time.toTimeString());
+    core.setOutput("time", time.toTimeString());
 
-    core.exportVariable('HELLO_TIME', time)
+    core.exportVariable("HELLO_TIME", time);
     core.startGroup("Logging github context");
     console.log(JSON.stringify(github.context, null, 2));
     core.endGroup();
